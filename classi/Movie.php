@@ -13,5 +13,15 @@
             $this->age = $_z;
 
         }
+
+        // METODO
+
+        public function isForadult(){
+            if( $this->age > 18){
+                return "La visione de $this->title è stata autorizzata";
+            } else {
+                return "La visione di questo film è riservata ad un pubblico adulto";
+            }
+        }
     }
 ?>
