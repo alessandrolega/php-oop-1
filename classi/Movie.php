@@ -7,10 +7,10 @@
 
         // COSTRUTTORE
 
-        function __construct( $_x, $_y, $_z){
-            $this->title = $_x;
-            $this->genre = $_y;
-            $this->age = $_z;
+        function __construct( $title, $genre, $age){
+            $this->title = $title;
+            $this->genre = $genre;
+            $this->age = $age;
 
         }
 
@@ -20,8 +20,27 @@
             if( $this->age > 18){
                 return "La visione de $this->title è stata autorizzata";
             } else {
-                return "La visione di questo film è riservata ad un pubblico adulto";
+                return "La visione de $this->title è riservata ad un pubblico adulto";
             }
+
+            echo $this -> title;
         }
+
+        // FUNZIONE STAMPA IN PAGINA
+
+        public function stamp(){
+            echo "<strong>Title:</strong> " . $this ->title;
+            echo "<br>";
+            echo "<strong>Genre:</strong> " . $this ->genre;
+            echo "<br>";
+            echo "<strong>Age:</strong> " . $this ->age;
+            echo "<br>";
+            echo $this->isForadult();
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+      }
+
+        
     }
 ?>
