@@ -29,11 +29,11 @@
         // FUNZIONE STAMPA IN PAGINA
 
         public function stamp(){
-            echo "<strong>Title:</strong> " . $this ->title;
+            echo "<h1>Title:</h1> " . $this ->title;
             echo "<br>";
-            echo "<strong>Genre:</strong> " . $this ->genre;
+            echo "<span>Genre:</span> " . $this ->genre;
             echo "<br>";
-            echo "<strong>Age:</strong> " . $this ->age;
+            echo "<span>Age:</span> " . $this ->age;
             echo "<br>";
             echo $this->isForadult();
             echo "<br>";
